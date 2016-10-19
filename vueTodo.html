@@ -25,7 +25,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vue实现todo</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://npmcdn.com/vue@2.0.3/dist/vue.min.js"></script>
 </head>
 <body>
@@ -38,18 +38,23 @@
         </div>
 
     </div>
-    <div class="content">
-            <input class="inputContent" type="text" placeholder="添加任务..." v-model="newTodo" v-on:keyup.enter="addTodo"/>
+    <div id="app">
+        <div id="mainTitle">
+            <h1>Vue实现TodoList</h1>
+        </div>
+            <input class="inputContent"  placeholder="添加任务..." v-model="newTodo" v-on:keyup.enter="addTodo"/>
        <div class="listTest">
             <ul>
-                <li v-for="todo in todos">
+                <!--vue 2.0版本写法-->
+                <li v-for="(todo,index) in todos">
                     <div class="showContent">
-                        <span>{{todo.text}}</span>
-                        <button v-on:click="removeTodo($index)">X</button>
+                        <span>{{ todo.text }}</span>
+                        <button v-on:click="removeTodo(index)">X</button>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
 </body>
+<script src="JS/testTodo.vue"></script>
 </html>
