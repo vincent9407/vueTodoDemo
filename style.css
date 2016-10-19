@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    background: #19CAAD;
+    height: 10em;
+    z-index: 1;
+}
+
+.header .logobox{
+    width: 500px;
+    height: 100px;
+    padding: 30px 0;
+
+}
+
+.logo{
+    margin-left: 50px;
+    width:100px;
+    height:100px;
+    border-radius:100px;
+    background:  #C8C8A9;
+    top:20px
+}
+
+.logo .logoname{
+    text-align: center;
+    padding: 34px 34px;
+}
+
+.logobox .des{
+    margin-left: 180px;
+    margin-top: -13%;
+}
+
+.content{
+    /*width: 100%;*/
+    /*background: #A0EEE1;*/
+    /*height: 30em;*/
+}
+
